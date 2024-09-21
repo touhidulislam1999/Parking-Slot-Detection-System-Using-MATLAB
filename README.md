@@ -6,6 +6,7 @@ The Parking Slot Detection System is a MATLAB-based project designed to detect a
 
 # Project Objective:
 The primary objective of this project is to build a functional model for detecting available parking slots in an image and to demonstrate the potential for parking management automation. Using MATLAB's built-in functions, the system allows for easy image upload, processing, and results visualization, giving the user a clear and informative output about the parking lot occupancy.
+![image](https://github.com/user-attachments/assets/832becd9-c4dd-47d9-a83b-3549970773b8)
 
 # Project Features:
 **1. User-Friendly MATLAB GUI:**
@@ -25,6 +26,10 @@ The primary objective of this project is to build a functional model for detecti
 - Item 3 Step 3: Thresholding & Binary Conversion: A thresholding technique is applied to the grayscale image to convert it into a binary (black and white) image, where the parking lot and vehicles can be separated for detection.
 - Item 4 Step 4: Vacant Slot Detection: The binary image is processed using object detection techniques. The bwlabel function labels connected components in the image, detecting cars and calculating the number of available parking slots.
 - Item 5 Step 5: Results Display: The processed image, showing detected vehicles, is displayed in the GUI. The count of available parking slots is dynamically updated and displayed as well.
+![image](https://github.com/user-attachments/assets/1f6affb1-7fd7-4cb5-8966-7c36185176b4)
+![image](https://github.com/user-attachments/assets/7ad4e530-1f92-416c-b4e1-513d70c51be6)
+![image](https://github.com/user-attachments/assets/37bf53c6-0c69-4d79-9d8c-519e9ae86591)
+
 
 # File Descriptions:
 **1. untitled1.m:**
@@ -36,6 +41,10 @@ The primary objective of this project is to build a functional model for detecti
 
 **2. untitled1.fig:**
 This is the associated figure file for the GUI layout. It defines the layout of the buttons, axes for image display, and text fields where the parking results are shown.
+
+![image](https://github.com/user-attachments/assets/f5c27290-64a3-4746-b35d-631f1d604983)
+![image](https://github.com/user-attachments/assets/dfd0262e-ca84-49a5-a8c0-2028a1fd0e9a)
+
 
 # Use Cases:
 - Item 1 Parking Management System: This project could be adapted to monitor real-time parking lot occupancy. With modifications, it could connect to live video feeds to continuously monitor and update available parking slots.
