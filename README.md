@@ -8,7 +8,7 @@ The Parking Slot Detection System is a MATLAB-based project designed to detect a
 The primary objective of this project is to build a functional model for detecting available parking slots in an image and to demonstrate the potential for parking management automation. Using MATLAB's built-in functions, the system allows for easy image upload, processing, and results visualization, giving the user a clear and informative output about the parking lot occupancy.
 
 # Project Features:
-1. User-Friendly MATLAB GUI:
+**1. User-Friendly MATLAB GUI:**
 - Item 1 The system has a simple and intuitive Graphical User Interface (GUI) designed using MATLAB's GUIDE tool. The interface enables users to interact with the application by uploading images, viewing processed outputs, and seeing the number of detected vacant slots in real-time.
 2. Image Processing Techniques:
 - Item 1 Grayscale Conversion: Once the user uploads an image of a parking lot, it is first converted into a grayscale image to simplify further processing.
