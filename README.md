@@ -1,15 +1,15 @@
 # Parking-Slot-Detection-System-Using-MATLAB
 The project is a MATLAB-based application that uses image processing techniques to detect and count available parking spaces in a parking lot. It displays vacant spots and demonstrates the potential of automated parking management systems, which can work with live camera feeds for real-time monitoring.
 
-#Introduction:
+# Introduction:
 The Parking Slot Detection System is a MATLAB-based project designed to detect and count available parking spaces in an image of a parking lot. The project leverages image processing techniques to analyze parking lot images, distinguishing between occupied and vacant slots. This system is ideal for creating a real-time parking management tool that could be further extended to integrate with live camera feeds for smart parking solutions in urban areas, shopping malls, airports, etc.
 
-Project Objective:
+# Project Objective:
 The primary objective of this project is to build a functional model for detecting available parking slots in an image and to demonstrate the potential for parking management automation. Using MATLAB's built-in functions, the system allows for easy image upload, processing, and results visualization, giving the user a clear and informative output about the parking lot occupancy.
 
-Project Features:
-User-Friendly MATLAB GUI:
-The system has a simple and intuitive Graphical User Interface (GUI) designed using MATLAB's GUIDE tool. The interface enables users to interact with the application by uploading images, viewing processed outputs, and seeing the number of detected vacant slots in real-time.
+# Project Features:
+**User-Friendly MATLAB GUI:****
+- Item 1 The system has a simple and intuitive Graphical User Interface (GUI) designed using MATLAB's GUIDE tool. The interface enables users to interact with the application by uploading images, viewing processed outputs, and seeing the number of detected vacant slots in real-time.
 Image Processing Techniques:
 Grayscale Conversion: Once the user uploads an image of a parking lot, it is first converted into a grayscale image to simplify further processing.
 Thresholding: A global threshold is applied to differentiate the background from objects (i.e., vehicles) in the image.
