@@ -10,16 +10,16 @@ The primary objective of this project is to build a functional model for detecti
 # Project Features:
 **1. User-Friendly MATLAB GUI:**
 - Item 1 The system has a simple and intuitive Graphical User Interface (GUI) designed using MATLAB's GUIDE tool. The interface enables users to interact with the application by uploading images, viewing processed outputs, and seeing the number of detected vacant slots in real-time.
-2. Image Processing Techniques:
+**2. Image Processing Techniques:**
 - Item 1 Grayscale Conversion: Once the user uploads an image of a parking lot, it is first converted into a grayscale image to simplify further processing.
 - Item 2 Thresholding: A global threshold is applied to differentiate the background from objects (i.e., vehicles) in the image.
 - Item 3 Binary Image Conversion: The grayscale image is converted into a binary image (black and white) where parking spots are segmented for further analysis.
 - Item 4 Object Detection & Labeling: Using MATLAB’s bwlabel function, the system detects and labels each object in the binary image to count the number of vehicles and thus calculate the available parking spaces.
 
-3. Parking Slot Counter:
+**3. Parking Slot Counter:**
 - Item 1 The system identifies vacant spots by calculating the total number of parking spaces in the image and subtracting the number of detected vehicles. This information is dynamically updated in the GUI, providing real-time feedback to the user.
 
-4. How the System Works:
+**4. How the System Works:**
 - Item 1 Step 1: Image Upload: The user selects an image of the parking lot using the GUI’s file upload function.
 - Item 2 Step 2: Image Preprocessing: The image is read into the program and converted to a grayscale format. This makes it easier to apply thresholding and identify vehicles.
 - Item 3 Step 3: Thresholding & Binary Conversion: A thresholding technique is applied to the grayscale image to convert it into a binary (black and white) image, where the parking lot and vehicles can be separated for detection.
@@ -27,14 +27,14 @@ The primary objective of this project is to build a functional model for detecti
 - Item 5 Step 5: Results Display: The processed image, showing detected vehicles, is displayed in the GUI. The count of available parking slots is dynamically updated and displayed as well.
 
 # File Descriptions:
-1. untitled1.m:
+**1. untitled1.m:**
 - Item 1 This is the main MATLAB script that powers the parking detection system. It contains the code for the GUI and the core functions responsible for image loading, preprocessing, and slot detection.
 - Item 2 Key functions include:
 - Sub Item 1 untitled1_OpeningFcn: Initializes the GUI and sets up necessary variables and structures.
 - Sub Item 2 pushbutton1_Callback: Handles the image upload functionality and displays the uploaded image on the GUI.
 - Sub Item 3 pushbutton2_Callback: Executes the parking slot detection logic, counting the number of vacant slots and displaying the result in the GUI.
 
-2. untitled1.fig:
+**2. untitled1.fig:**
 This is the associated figure file for the GUI layout. It defines the layout of the buttons, axes for image display, and text fields where the parking results are shown.
 
 # Use Cases:
