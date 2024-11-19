@@ -1,57 +1,98 @@
-# Parking-Slot-Detection-System-Using-MATLAB
-The project is a MATLAB-based application that uses image processing techniques to detect and count available parking spaces in a parking lot. It displays vacant spots and demonstrates the potential of automated parking management systems, which can work with live camera feeds for real-time monitoring.
+# 🅿️ Parking Slot Detection System Using MATLAB
 
-# Introduction:
-The Parking Slot Detection System is a MATLAB-based project designed to detect and count available parking spaces in an image of a parking lot. The project leverages image processing techniques to analyze parking lot images, distinguishing between occupied and vacant slots. This system is ideal for creating a real-time parking management tool that could be further extended to integrate with live camera feeds for smart parking solutions in urban areas, shopping malls, airports, etc.
+This MATLAB-based project detects and counts available parking spaces in a parking lot using **image processing techniques**. It showcases the potential for automated parking management systems and can be extended for real-time monitoring using live camera feeds. 🚗🅿️
 
-# Project Objective:
-The primary objective of this project is to build a functional model for detecting available parking slots in an image and to demonstrate the potential for parking management automation. Using MATLAB's built-in functions, the system allows for easy image upload, processing, and results visualization, giving the user a clear and informative output about the parking lot occupancy.
-![image](https://github.com/user-attachments/assets/832becd9-c4dd-47d9-a83b-3549970773b8)
+---
 
-# Project Features:
-**1. User-Friendly MATLAB GUI:**
-- Item 1 The system has a simple and intuitive Graphical User Interface (GUI) designed using MATLAB's GUIDE tool. The interface enables users to interact with the application by uploading images, viewing processed outputs, and seeing the number of detected vacant slots in real-time.
-**2. Image Processing Techniques:**
-- Item 1 Grayscale Conversion: Once the user uploads an image of a parking lot, it is first converted into a grayscale image to simplify further processing.
-- Item 2 Thresholding: A global threshold is applied to differentiate the background from objects (i.e., vehicles) in the image.
-- Item 3 Binary Image Conversion: The grayscale image is converted into a binary image (black and white) where parking spots are segmented for further analysis.
-- Item 4 Object Detection & Labeling: Using MATLAB’s bwlabel function, the system detects and labels each object in the binary image to count the number of vehicles and thus calculate the available parking spaces.
+## 📜 **Introduction**
+The **Parking Slot Detection System** is a MATLAB application designed to analyze parking lot images, distinguishing between **vacant** and **occupied slots**. By leveraging MATLAB's powerful image processing tools, the system demonstrates how technology can simplify parking management in **urban areas**, **shopping malls**, **airports**, and more.
 
-**3. Parking Slot Counter:**
-- Item 1 The system identifies vacant spots by calculating the total number of parking spaces in the image and subtracting the number of detected vehicles. This information is dynamically updated in the GUI, providing real-time feedback to the user.
+---
 
-**4. How the System Works:**
-- Item 1 Step 1: Image Upload: The user selects an image of the parking lot using the GUI’s file upload function.
-- Item 2 Step 2: Image Preprocessing: The image is read into the program and converted to a grayscale format. This makes it easier to apply thresholding and identify vehicles.
-- Item 3 Step 3: Thresholding & Binary Conversion: A thresholding technique is applied to the grayscale image to convert it into a binary (black and white) image, where the parking lot and vehicles can be separated for detection.
-- Item 4 Step 4: Vacant Slot Detection: The binary image is processed using object detection techniques. The bwlabel function labels connected components in the image, detecting cars and calculating the number of available parking slots.
-- Item 5 Step 5: Results Display: The processed image, showing detected vehicles, is displayed in the GUI. The count of available parking slots is dynamically updated and displayed as well.
-![image](https://github.com/user-attachments/assets/1f6affb1-7fd7-4cb5-8966-7c36185176b4)
-![image](https://github.com/user-attachments/assets/7ad4e530-1f92-416c-b4e1-513d70c51be6)
-![image](https://github.com/user-attachments/assets/37bf53c6-0c69-4d79-9d8c-519e9ae86591)
+## 🎯 **Project Objective**
+The main goal is to build a functional system that:
+- Detects available parking spaces from an uploaded image.
+- Uses image processing to identify and count vehicles.
+- Displays the results in an easy-to-understand format with MATLAB's **Graphical User Interface (GUI)**.
 
+![Parking Lot Image](https://github.com/user-attachments/assets/832becd9-c4dd-47d9-a83b-3549970773b8)
 
-# File Descriptions:
-**1. untitled1.m:**
-- Item 1 This is the main MATLAB script that powers the parking detection system. It contains the code for the GUI and the core functions responsible for image loading, preprocessing, and slot detection.
-- Item 2 Key functions include:
-- Sub Item 1 untitled1_OpeningFcn: Initializes the GUI and sets up necessary variables and structures.
-- Sub Item 2 pushbutton1_Callback: Handles the image upload functionality and displays the uploaded image on the GUI.
-- Sub Item 3 pushbutton2_Callback: Executes the parking slot detection logic, counting the number of vacant slots and displaying the result in the GUI.
+---
 
-**2. untitled1.fig:**
-This is the associated figure file for the GUI layout. It defines the layout of the buttons, axes for image display, and text fields where the parking results are shown.
+## ⚙️ **Project Features**
 
-![image](https://github.com/user-attachments/assets/f5c27290-64a3-4746-b35d-631f1d604983)
-![image](https://github.com/user-attachments/assets/dfd0262e-ca84-49a5-a8c0-2028a1fd0e9a)
+### **1. User-Friendly MATLAB GUI**
+- Intuitive interface designed with MATLAB's GUIDE tool.
+- Allows users to upload parking lot images, view results, and monitor vacant slots in real time.
 
+### **2. Image Processing Techniques**
+- **Grayscale Conversion**: Simplifies image processing by converting the input image to grayscale.
+- **Thresholding**: Differentiates between the parking lot background and vehicles.
+- **Binary Image Conversion**: Converts the grayscale image into a black-and-white binary format for easier analysis.
+- **Object Detection**: Detects and labels connected components (vehicles) using MATLAB's `bwlabel` function.
 
-# Use Cases:
-- Item 1 Parking Management System: This project could be adapted to monitor real-time parking lot occupancy. With modifications, it could connect to live video feeds to continuously monitor and update available parking slots.
-Traffic Monitoring: The project can be extended to detect other forms of vehicles or traffic patterns in real time.
-- Item 2 Smart City Solutions: This system could be part of a larger smart city initiative, helping optimize parking spaces in urban environments and reducing congestion caused by drivers searching for parking.
+### **3. Parking Slot Counter**
+- Dynamically calculates and displays the number of vacant parking slots based on the detected vehicles and total slots.
 
-# Future Improvements:
-- Item 1 Real-Time Integration: Extend the project by integrating with live camera feeds, enabling real-time detection and monitoring of parking spaces.
-- Item 2 Machine Learning: Implement machine learning models to enhance the accuracy of vehicle detection and slot recognition, especially in more complex parking lot images.
-- Item 3 +Multi-Lot Monitoring: Allow the system to handle multiple parking lots at once, tracking the available spots in different locations from a central dashboard.
+---
+
+## 🔍 **How the System Works**
+
+1. **Image Upload**: Users upload an image of the parking lot via the GUI.
+2. **Image Preprocessing**: 
+   - Convert the image to grayscale.
+   - Apply thresholding and binary conversion.
+3. **Vacant Slot Detection**:
+   - Detect vehicles using object detection techniques.
+   - Calculate available slots by subtracting detected vehicles from total slots.
+4. **Results Display**: The processed image and the number of vacant slots are displayed in the GUI.
+
+![Workflow Image 1](https://github.com/user-attachments/assets/1f6affb1-7fd7-4cb5-8966-7c36185176b4)
+![Workflow Image 2](https://github.com/user-attachments/assets/7ad4e530-1f92-416c-b4e1-513d70c51be6)
+![Workflow Image 3](https://github.com/user-attachments/assets/37bf53c6-0c69-4d79-9d8c-519e9ae86591)
+
+---
+
+## 📂 **File Descriptions**
+
+### **1. untitled1.m**
+- The main MATLAB script powering the system.
+- Key functions:
+  - **`untitled1_OpeningFcn`**: Initializes the GUI and system variables.
+  - **`pushbutton1_Callback`**: Handles image upload and displays it on the GUI.
+  - **`pushbutton2_Callback`**: Executes the parking slot detection algorithm and updates the results.
+
+### **2. untitled1.fig**
+- The figure file defining the GUI layout.
+- Includes components like:
+  - **Buttons** for uploading images and running the detection algorithm.
+  - **Axes** for displaying images and results.
+  - **Text fields** for showing the number of vacant slots.
+
+![GUI Design](https://github.com/user-attachments/assets/f5c27290-64a3-4746-b35d-631f1d604983)
+![GUI in Action](https://github.com/user-attachments/assets/dfd0262e-ca84-49a5-a8c0-2028a1fd0e9a)
+
+---
+
+## 🛠️ **Use Cases**
+1. **Parking Management**: Monitor real-time parking lot occupancy.
+2. **Traffic Monitoring**: Extend the project for vehicle detection in traffic scenarios.
+3. **Smart Cities**: Integrate with smart city systems to optimize parking availability and reduce congestion.
+
+---
+
+## 🚀 **Future Improvements**
+1. **Real-Time Monitoring**:
+   - Integrate live camera feeds for continuous parking lot monitoring.
+2. **Machine Learning**:
+   - Use advanced models to improve detection accuracy in complex environments.
+3. **Multi-Lot Management**:
+   - Track multiple parking lots simultaneously from a centralized dashboard.
+
+---
+
+## 📜 **How to Use**
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/touhidulislam1999/Parking-Slot-Detection-System-Using-MATLAB.git
